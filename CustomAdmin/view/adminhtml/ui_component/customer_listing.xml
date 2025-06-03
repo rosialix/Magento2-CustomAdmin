@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="customer_columns" >
+        <actionsColumn name="send_mail" class="Ross\CustomAdmin\Ui\Component\Listing\Column\Sendmail">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="component" xsi:type="string">Ross_CustomAdmin/js/grid/columns/sendmail</item>
+                    <item name="indexField" xsi:type="string">entity_id</item>
+                    <item name="sortable" xsi:type="boolean">false</item>
+                    <item name="label" xsi:type="string" translate="true">Send Mail</item>
+                </item>
+            </argument>
+        </actionsColumn>
+    </columns>
+</listing>
